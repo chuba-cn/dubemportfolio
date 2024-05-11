@@ -1,113 +1,288 @@
 import Image from "next/image";
+import Link from "next/link";
+import Wrapper from "@/components/Wrapper";
+import Hero from "@/components/Hero";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <Wrapper>
+      <Hero/>
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <div className="container px-4 md:px-6">
+          <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col items-start space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Work Experience
+                </h2>
+                <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  A summary of my professional experience.
+                </p>
+              </div>
+              <div className="grid gap-6">
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">Cyber Security Analyst</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Acme Cybersecurity, 2018 - Present
+                  </p>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Responsible for conducting vulnerability assessments,
+                    implementing security controls, and responding to security
+                    incidents.
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">Security Intern</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Cybersec Solutions, 2016 - 2018
+                  </p>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Assisted in the development and implementation of security
+                    policies and procedures.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-start space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Education
+                </h2>
+                <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  My academic background.
+                </p>
+              </div>
+              <div className="grid gap-6">
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">
+                    Master of Science in Cybersecurity
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    University of Cyberton, 2016 - 2018
+                  </p>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Specialized in network security, incident response, and
+                    security automation.
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">
+                    Bachelor of Science in Computer Science
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Cybersec University, 2012 - 2016
+                  </p>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Focused on software development, data structures, and
+                    algorithms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6">
+          <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col items-start space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Skills
+                </h2>
+                <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  My technical expertise and capabilities.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">Security Tools</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Nmap, Wireshark, Metasploit, Burp Suite
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">Programming Languages</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Python, Bash, PowerShell, JavaScript
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">Security Frameworks</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    OWASP, NIST, ISO 27001, HIPAA
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">Cloud Security</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    AWS, Azure, GCP, Kubernetes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-start space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Certifications
+                </h2>
+                <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  My professional certifications.
+                </p>
+              </div>
+              <div className="grid gap-6">
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">
+                    Certified Information Systems Security Professional (CISSP)
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    (ISC)², 2020 - Present
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">
+                    Certified Ethical Hacker (CEH)
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    EC-Council, 2018 - Present
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">CompTIA Security+</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    CompTIA, 2016 - Present
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <div className="container px-4 md:px-6">
+          <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col items-start space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Projects
+                </h2>
+                <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Some of my personal and professional projects.
+                </p>
+              </div>
+              <div className="grid gap-6">
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">Vulnerability Scanner</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Developed a custom vulnerability scanning tool using Python
+                    and Nmap.
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">
+                    Incident Response Playbook
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Designed and implemented an incident response playbook for a
+                    large enterprise.
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <h3 className="text-lg font-bold">
+                    Security Automation Scripts
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Developed a suite of security automation scripts using
+                    PowerShell and Bash.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-start space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Contact Me
+                </h2>
+                <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Connect with me on social media or send me an email.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <Link href="#" target="_blank">
+                  <Image
+                    alt="Twitter"
+                    className="h-8 w-8 hover:opacity-80"
+                    height="32"
+                    src="/placeholder.svg"
+                    style={{
+                      aspectRatio: "32/32",
+                      objectFit: "cover",
+                    }}
+                    width="32"
+                  />
+                </Link>
+                <Link href="#" target="_blank">
+                  <Image
+                    alt="Email"
+                    className="h-8 w-8 hover:opacity-80"
+                    height="32"
+                    src="/placeholder.svg"
+                    style={{
+                      aspectRatio: "32/32",
+                      objectFit: "cover",
+                    }}
+                    width="32"
+                  />
+                </Link>
+                <Link href="#" target="_blank">
+                  <Image
+                    alt="LinkedIn"
+                    className="h-8 w-8 hover:opacity-80"
+                    height="32"
+                    src="/placeholder.svg"
+                    style={{
+                      aspectRatio: "32/32",
+                      objectFit: "cover",
+                    }}
+                    width="32"
+                  />
+                </Link>
+                <Link href="#" target="_blank">
+                  <Image
+                    alt="GitHub"
+                    className="h-8 w-8 hover:opacity-80"
+                    height="32"
+                    src="/placeholder.svg"
+                    style={{
+                      aspectRatio: "32/32",
+                      objectFit: "cover",
+                    }}
+                    width="32"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+        <p className="text-xs text-gray-500 dark:text-gray-400">
+          © 2024 John Doe. All rights reserved.
+        </p>
+        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          <Link className="text-xs hover:underline underline-offset-4" href="#">
+            LinkedIn
+          </Link>
+          <Link className="text-xs hover:underline underline-offset-4" href="#">
+            GitHub
+          </Link>
+          <Link className="text-xs hover:underline underline-offset-4" href="#">
+            Email
+          </Link>
+        </nav>
+      </footer>
+    </Wrapper>
   );
-}
+};
+
+export default Home;
