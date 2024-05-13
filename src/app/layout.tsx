@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Libre_Franklin } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import "./globals.css";
-import './styles.css';
+import Navbar from "@/components/Navbar";
 
-const libre_franklin = Libre_Franklin({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-libre_franklin',
+const poppins = Poppins({
+  weight: ['100', '200', '400', '600', '800'],
+ subsets: ['latin'],
+ display: 'swap',
+ variable: '--font-poppins'
 })
 
 export const metadata: Metadata = {
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={libre_franklin.variable}>{children}</body>
+      <body className={poppins.variable}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
