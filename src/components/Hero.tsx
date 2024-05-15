@@ -1,8 +1,14 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Button } from './ui/button';
-import profile from "../../public/profile.jpg"
+import profile from "../../public/profile.jpg";
+import { TextGenerateEffect } from './ui/text-generate-effect';
+
+const word1 = `Hey, I'm Chuba 👋`;
+const word2 = `I'm a cybersecurity analyst & computer engineering graduate. I'm certified in cybersecurity and Azure fundamentals. Let's secure your digital world.`
 
 
 const Hero = () => {
@@ -12,13 +18,13 @@ const Hero = () => {
         <div className='container px-4 md:px-6'>
           <div className='flex flex-col lg:flex-row gap-12 lg:gap-12 lg:justify-between items-center '>
             <div className='flex flex-col gap-2'>
-              <p className='text-gray-700  text-2xl md:text-3xl tracking-tighter'>Hey, I&apos;m Chuba 👋</p>
+              <TextGenerateEffect words={word1} className='text-gray-700  text-2xl md:text-3xl tracking-tighter' />
               <h1 className='text-5xl md:text-7xl font-bold tracking-tight mb-2 text-wrap text-gray-700'>
                 <span className='text-primary'>Cybersecurity&nbsp;</span>
                 <br className='md:hidden lg:inline'/>
                 Analyst
               </h1>
-              <p className='text-gray-700  text-xl md:text-2xl tracking-tighter mb-4'>I&apos;m a cybersecurity analyst & computer engineering graduate. I&apos;m certified in cybersecurity and Azure fundamentals. Let&apos;s secure your digital world.</p>
+              <TextGenerateEffect words={word2} className='text-gray-700  text-xl md:text-2xl tracking-tighter mb-4' />
               <div className='flex items-center gap-4'>
                 <Link href="#contact">
                   <Button className='text-lg'>Get in Touch</Button>
@@ -32,7 +38,7 @@ const Hero = () => {
             </div>
 
             <div className='flex justify-center items-center'>
-              <div className='border border-purple-400 rounded-full h-[400px] w-[400px] lg:h-[500px] lg:w-[500px]'>
+              <div className='border border-purple-400 rounded-full h-[360px] w-[360px] md:h-[500px] md:w-[500px]'>
                 <div className='p-10'>
                   <Image
                     src={profile}
