@@ -14,7 +14,7 @@ import { Check } from "lucide-react";
 
 export default function JobCarousel() {
   return (
-    <Carousel className="w-full max-w-sm lg:max-w-xl">
+    <Carousel className="w-full max-w-xs md:max-w-xl">
       <CarouselContent>
         {experiences.map((job, index) => (
           <CarouselItem key={index}>
@@ -33,11 +33,11 @@ export default function JobCarousel() {
                   </CardHeader>
 
                   <CardContent className="flex flex-col justify-between items-start">
-                    <div className="flex flex-col justify-start items-center gap-4">
+                    <div>
                       {job.duties.map((duty, index) => (
-                        <div key={index} >
+                        <div key={index} className="flex justify-start items-start gap-4 mb-2">
                           <Check className="text-primary inline" />
-                          <p className="text-gray-700 inline">{duty}</p>
+                          <p className="text-gray-700 inline max-w-[200px] md:max-w-sm">{duty}</p>
                         </div>
                       ))}
                     </div>
