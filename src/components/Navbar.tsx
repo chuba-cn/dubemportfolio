@@ -6,10 +6,12 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 z-50 w-full shadow-sm backdrop-blur-sm flex justify-between items-center">
       {/* Desktop Navigation */}
-        <div className="px-8">
-          <Link className="flex items-center gap-2 font-semibold hover:text-primary" href="#">
+        <div className="px-4 md:px-8">
+          <Link className="flex items-center gap-2 font-bold" href="#">
             <ShieldIcon className="h-6 w-6 text-gray-700" />
-            <span className="font-semibold text-2xl text-gray-700">Chuba</span>
+            <span className="font-semibold text-2xl">Chuba
+              <span className="text-2xl text-primary font-extrabold">.</span>
+            </span>
           </Link>
         </div>
         <div className="flex h-16 items-center justify-between px-4 md:px-6">
