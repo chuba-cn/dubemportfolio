@@ -21,8 +21,8 @@ export default function JobCarouselDesktop() {
         {experiences.map((job, index) => (
           <CarouselItem key={index} className="lg:basis-1/3">
             <div className="p-1">
-              <Card className="flex flex-col gap-4 items-start even:py-14 odd:py-8 shadow-lg">
-                <div className="flex flex-col justify-between items-start">
+              <Card className="flex flex-col gap-4 even:py-14 odd:py-8 shadow-lg">
+                <div className="flex flex-col justify-between items-center">
                   <CardHeader>
                     <CardTitle className="text-gray-800 text-2xl">
                       {job.role}{" "}
@@ -34,8 +34,8 @@ export default function JobCarouselDesktop() {
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent className="flex flex-col justify-between items-start">
-                    <div>
+                  <CardContent className="flex flex-col justify-center items-center">
+                    <div className="flex flex-col justify-center items-center">
                       {job.duties.map((duty, index) => (
                         <div key={index} className="flex justify-start items-start gap-4 mb-2 border-t border-gray-300 py-4">
                           <Check className="text-primary inline h-4 w-4" />

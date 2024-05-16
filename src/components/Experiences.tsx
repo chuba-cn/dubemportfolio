@@ -7,7 +7,7 @@ const Experiences = () => {
 
   return (
     <section
-      className="w-full mt-20 md:mt-16 "
+      className="w-full mt-20 md:mt-16 lg:p-2 "
       id="experiences"
     >
       <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-wrap text-gray-700">
@@ -17,7 +17,7 @@ const Experiences = () => {
       <div className="flex justify-center items-center mt-16 lg:hidden">
         <JobCarouselMobile />
       </div>
-      <div className="max-md:hidden flex justify-center mt-16">
+      <div className="hidden lg:flex justify-center mt-16">
         <JobCarouselDesktop />
       </div>
     </section>

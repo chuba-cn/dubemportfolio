@@ -19,8 +19,8 @@ export default function JobCarouselMobile() {
         {experiences.map((job, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card className="flex flex-col gap-4 items-start shadow-lg">
-                <div className="flex flex-col justify-between items-start">
+              <Card className="flex flex-col gap-4 shadow-lg">
+                <div className="flex flex-col justify-between items-center">
                   <CardHeader>
                     <CardTitle className="text-gray-800 text-xl lg:text-2xl">
                       {job.role}{" "}
