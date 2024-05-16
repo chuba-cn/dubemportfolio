@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Button } from './ui/button';
-import profile from "../../public/profile.jpg";
+import profile from "../../public/dubemProfilePic.jpg";
 import { TextGenerateEffect } from './ui/text-generate-effect';
 
 const word1 = `Hey, I'm Chuba 👋`;
