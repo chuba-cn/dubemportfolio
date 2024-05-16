@@ -14,8 +14,7 @@ const word2 = `I'm a cybersecurity analyst & computer engineering graduate. I'm 
 const Hero = () => {
 
   return (
-    <section className="w-full mt-20 md:mt-0 py-8 md:py-24 lg:py-28 xl:py-30" id="hero">
-        <div className='container px-4 md:px-6'>
+    <section className="w-full mt-20 md:mt-0 py-8 md:pt-24 lg:pt-28 xl:pt-30" id="hero">
           <div className='flex flex-col lg:flex-row gap-12 lg:gap-12 lg:justify-between items-center '>
             <div className='flex flex-col gap-2'>
               <TextGenerateEffect words={word1} className='text-gray-700  text-2xl md:text-3xl tracking-tighter' />
@@ -51,9 +50,11 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
     </section>
   )
 }
 
 export default Hero
+
+{/* <div className='container px-4 md:px-6'>
+</div> */}
