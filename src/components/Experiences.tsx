@@ -7,7 +7,7 @@ const Experiences = () => {
 
   return (
     <section
-      className="w-full mt-20 md:mt-16 lg:p-2 "
+      className="w-full mt-20 md:mt-16"
       id="experiences"
     >
       <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-wrap text-gray-700">
