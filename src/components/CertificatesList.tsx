@@ -7,7 +7,7 @@ const CertificatesList = () => {
     <div className="h-[20rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={certifcates}
-        direction="right"
+        direction="left"
         speed="normal"
       />
     </div>

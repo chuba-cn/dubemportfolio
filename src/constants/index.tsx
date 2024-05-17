@@ -65,17 +65,17 @@ export const certifcates: Certifcation[] = [
     {
         name: "ISC2 Certified in Cybersecurity (CC)",
         image:'https://www.cyberquarter.co.uk/wp-content/uploads/2023/12/MicrosoftTeams-image-38-scaled.jpg',
-        url: 'https://www.linkedin.com/in/chidubem-chuba-nwene-2b6b2a1bb/details/certifications/1705297769536/single-media-viewer?type=DOCUMENT&profileId=ACoAADM_GyoBTTVFFlqT1-hGmUbZisZV9yNSH2U&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B95xz0SrKQnuFvbqilUQ7Pg%3D%3D'
+        url: 'https://www.credly.com/badges/f0876474-d6c0-49ec-8e46-4e2d6f0cfe8e/public_url'
     },
     {
         name: "Microsoft Security, Compliance, and Identity Fundamentals",
         image:'https://images.credly.com/images/fc1352af-87fa-4947-ba54-398a0e63322e/security-compliance-and-identity-fundamentals-600x600.png',
-        url: "https://www.linkedin.com/in/chidubem-chuba-nwene-2b6b2a1bb/details/certifications/1712109096949/single-media-viewer?type=DOCUMENT&profileId=ACoAADM_GyoBTTVFFlqT1-hGmUbZisZV9yNSH2U&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B95xz0SrKQnuFvbqilUQ7Pg%3D%3D"
+        url: "https://www.credly.com/badges/9a686c3a-32d1-441b-afe6-3aaf5ba3d7af/public_url"
     },
     {
         name: "Microsoft Azure Fundamentals",
         image:'https://images.credly.com/size/340x340/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png',
-        url: "https://www.linkedin.com/in/chidubem-chuba-nwene-2b6b2a1bb/details/certifications/1635554588223/single-media-viewer?type=DOCUMENT&profileId=ACoAADM_GyoBTTVFFlqT1-hGmUbZisZV9yNSH2U&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B95xz0SrKQnuFvbqilUQ7Pg%3D%3D"
+        url: "https://www.credly.com/badges/135b3a03-f434-4dd3-b157-14e1481f0382/public_url"
     },
     {
         name: "CompTIA Security +",
