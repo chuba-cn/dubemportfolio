@@ -8,7 +8,7 @@ const CertificatesList = () => {
       <InfiniteMovingCards
         items={certifcates}
         direction="right"
-        speed="slow"
+        speed="normal"
       />
     </div>
   )

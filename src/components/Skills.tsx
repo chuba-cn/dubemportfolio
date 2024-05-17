@@ -15,7 +15,7 @@ const Skills = () => {
             key={index}
           >
             <div>
-              <p className="text-gray-700 font-bold text-2xl">
+              <p className="text-gray-700 font-bold text-xl md:text-2xl">
                 {skill.skillGroup}
               </p>
             </div>
@@ -26,7 +26,7 @@ const Skills = () => {
               >
                 {skill.skillItem.map((item, index) => (
                   <div key={index}>
-                    <p className="text-gray-600 text-[22px] tracking-wide">
+                    <p className="text-gray-600 text-lg md:text-[22px] tracking-wide">
                       {item}
                     </p>
                   </div>

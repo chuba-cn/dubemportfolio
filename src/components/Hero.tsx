@@ -8,22 +8,22 @@ import profile from "../../public/dubemProfilePic.jpg";
 import { TextGenerateEffect } from './ui/text-generate-effect';
 
 const word1 = `Hey, I'm Chuba 👋`;
-const word2 = `I'm a cybersecurity analyst & computer engineering graduate. I'm certified in cybersecurity and Azure fundamentals. Let's secure your digital world.`
+const word2 = "I'm a cybersecurity analyst & computer engineering graduate.\nI'm certified in cybersecurity and Azure fundamentals. Let's secure your digital world."
 
 
 const Hero = () => {
 
   return (
     <section className="w-full mt-20 md:mt-0 py-8 md:pt-24 lg:pt-28 xl:pt-30" id="hero">
-          <div className='flex flex-col lg:flex-row gap-12 lg:gap-12 lg:justify-between items-center '>
+          <div className='flex flex-col lg:flex-row gap-12 lg:justify-between items-center '>
             <div className='flex flex-col gap-2'>
               <TextGenerateEffect words={word1} className='text-gray-700  text-2xl md:text-3xl tracking-tighter' />
-              <h1 className='text-5xl md:text-7xl font-bold tracking-tight mb-2 text-wrap text-gray-700'>
+              <h1 className='text-5xl md:text-7xl font-bold tracking-tight mb-4 text-wrap text-gray-700'>
                 <span className='text-primary'>Cybersecurity&nbsp;</span>
                 <br className='md:hidden lg:inline'/>
                 Analyst
               </h1>
-              <TextGenerateEffect words={word2} className='text-gray-700  text-xl md:text-2xl tracking-tighter mb-4' />
+              <TextGenerateEffect words={word2} className='text-gray-700  text-xl md:text-2xl tracking-tighter mb-4 text-wrap' />
               <div className='flex items-center gap-4'>
                 <Link href="#contact">
                   <Button className='text-lg'>Get in Touch</Button>
@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
 
             <div className='flex justify-center items-center'>
-              <div className='border border-purple-400 rounded-full h-[360px] w-[360px] md:h-[500px] md:w-[500px]'>
+              <div className='border border-primary rounded-full h-[360px] w-[360px] md:h-[500px] md:w-[500px]'>
                 <div className='p-10'>
                   <Image
                     src={profile}
@@ -55,6 +55,3 @@ const Hero = () => {
 }
 
 export default Hero
-
-{/* <div className='container px-4 md:px-6'>
-</div> */}

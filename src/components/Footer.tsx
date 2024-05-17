@@ -1,23 +1,33 @@
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 ">
-          © 2024 John Doe. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            LinkedIn
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            GitHub
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Email
-          </Link>
-        </nav>
-      </footer>
+    <footer className="w-full mt-20 md:mt-16 bg-primary rounded-tr-lg rounded-tl-lg px-4 md:px-8" id="contact">
+      <Link href='mailto:chidubem.chuba@gmail.com' target="_blank">
+        <div className="border-b-4 border-gray-200 flex flex-row justify-between items-center py-7">
+          <p className="md:text-4xl md:hover:text-5xl md:hover:text-gray-200 transition-all text-gray-300 font-bold uppercase ">
+            Contact me
+          </p>
+          <ArrowUpRight className="md:h-16 md:w-16 text-gray-300 inline"/>
+        </div>
+      </Link>
+
+      <Link href="https://www.linkedin.com/in/chidubem-chuba-nwene-2b6b2a1bb/" target="_blank">
+        <div className="border-b-4 border-gray-200 flex flex-row justify-between items-center py-7">
+          <p className="md:text-4xl md:hover:text-5xl md:hover:text-gray-200 transition-all text-gray-300  font-bold uppercase">Linkedin</p>
+          <ArrowUpRight className="md:h-16 md:w-16 text-gray-200 inline"/>
+        </div>
+      </Link>
+
+      <Link href="tel:+1(416)939-3478" target="_blank">
+        <div className="border-gray flex flex-row justify-between items-center py-7">
+          <p className="md:text-4xl md:hover:text-5xl md:hover:text-gray-200 transition-all text-gray-300 font-bold uppercase">+1(416)939-347</p>
+          <ArrowUpRight className="md:h-16 md:w-16 text-gray-200 inline"/>
+        </div>
+      </Link>
+        
+    </footer>
   )
 }
 

@@ -116,24 +116,3 @@ export const InfiniteMovingCards = ({
     </div>
   );
 };
-
-{/* <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.name}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.image}
-                  </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.url}
-                  </span>
-                </span>
-              </div>
-            
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
-        
-        border-gray-200 shadow-md*/}

@@ -7,7 +7,6 @@ const Certifications = () => {
       <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-wrap text-gray-700 mb-12">
         Certifications <BookOpenCheck className="inline text-primary font-bold h-8 w-8" />
       </h1>
-      
       <CertificatesList />
     </section>
   );

@@ -10,14 +10,15 @@ import Certifications from "@/components/Certifications";
 
 const Home = () => {
   return (
+    <>
     <Wrapper>
       <Hero/>
       <Experiences/>
       <Skills/>
       <Certifications/>
-      <Projects/>
-      <Footer/>
     </Wrapper>
+      <Footer/>
+    </>
   );
 };
 
