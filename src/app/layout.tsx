@@ -13,6 +13,8 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Chidubem Chuba-Nwene",
   description: "A Personal Portfolio site",
+  icons: '/cyber-security.png'
+ 
 };
 
 export default function RootLayout({
