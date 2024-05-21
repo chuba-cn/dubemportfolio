@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function ProjectList() {
   return (
-    <div className="flex flex-wrap items-center justify-center p-4 gap-12 mt-10">
+    <div className="flex flex-wrap items-center justify-center p-4 gap-12">
       {projects.map((item) => (
         <div
           className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
