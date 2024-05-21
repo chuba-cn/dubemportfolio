@@ -10,7 +10,7 @@ const Experiences = () => {
       className="w-full mt-20 md:mt-16"
       id="experiences"
     >
-      <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-wrap text-gray-700">
+      <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-wrap text-gray-700">
         Experience{" "}
         <BriefcaseBusiness className="inline text-primary font-bold h-8 w-8" />
       </h1>

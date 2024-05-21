@@ -4,7 +4,7 @@ import { skills } from '@/constants/index';
 const Skills = () => {
   return (
     <section className="w-full mt-20 md:mt-32" id="skills">
-      <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-wrap text-gray-700">
+      <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-wrap text-gray-700">
         Skills <Computer className="inline text-primary font-bold h-8 w-8" />
       </h1>
 
