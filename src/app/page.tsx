@@ -13,6 +13,7 @@ const Home = () => {
     <>
     <Wrapper>
       <Hero/>
+      <Projects />
       <Experiences/>
       <Skills/>
       <Certifications/>

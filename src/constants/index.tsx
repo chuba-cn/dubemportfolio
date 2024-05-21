@@ -18,6 +18,12 @@ export interface Skill {
     skillItem: string[]
 }
 
+export interface Project{
+    title: string,
+    description: string,
+    url: string
+}
+
 export const experiences: Experience[] =[
     {
         id: 0,
@@ -129,4 +135,32 @@ export const skills: Skill[] = [
         skillGroup: 'Cloud Computing',
         skillItem: ['Microsoft Azure']
     },
+]
+
+export const projects: Project[] = [
+    {
+        title: "Aldotech Auditing & Security Review",
+        description: "The objective of this project is to create a comprehensive security analysis and improvement plan for a fictional  enterprise-sized company named AldoTech, which employs over 500 people and operates in multiple countries. The project involves detailing the business operations and IT infrastructure of the company, conducting a thorough  risk assessment to identify vulnerabilities and prioritize assets, and evaluating current security measures. Based on this assessment, the project uses COBIT's capability levels to set current and future security goals. It then applies NIST/CIS controls to address identified risks, providing metrics to measure the effectiveness of these controls and ensuring continuous improvement in the company's cybersecurity posture.",
+        url: 'https://drive.google.com/drive/folders/1ZguFHPMaKNw9wjr0t6dQkCutjLnLTMIe?usp=drive_link'
+    },
+    {
+        title: "Cloud Implementation Project (Microsoft Azure)",
+        description: "The objective of this project is to create a comprehensive presentation that addresses a client's needs and goals for cloud services. The project involves three parts: firstly, identifying and justifying appropriate cloud services based on the client's current situation, needs, and regulatory requirements, including cost estimation and benefits using the Azure Pricing Calculator. Secondly, designing a cloud infrastructure diagram that visualizes the integration and relationships of the selected services. Lastly, discussing the chosen cloud solutions, justifying their selection, highlighting client benefits, and reflecting on project challenges and potential improvements. This project allows new learners to apply their knowledge of Microsoft Azure and cloud services in a practical, client-focused scenario.",
+        url: "https://drive.google.com/drive/folders/1wU8kttK_30fGXaB4vLEp1-ToJ5jOO9aa?usp=drive_link"
+    },
+    {
+        title: "Physical Site Assessment",
+        description: "The objective of this project is to conduct a comprehensive physical security assessment of a selected site emphasizing the critical role of physical defenses in overall cybersecurity. The project is structured to select and assess a potential site, document existing security controls, and ultimately produce a detailed professional report. The process involves initial site selection and assessment, creating a detailed sketch of the location with noted security features, and compiling a full report that evaluates the site's security strengths and weaknesses, provides risk ratings, offers recommendations for improvements and aims to mirror the standards of a professional security assessment.",
+        url: "https://drive.google.com/drive/folders/1_EfwvYYB_Rr1v6fMS8xdAg5U4Bj6DDWQ?usp=drive_link"
+    },
+    {
+        title: "Security Strategy Plan",
+        description: "The objective of this project is to develop a comprehensive cyber-security strategic plan for a fictional company over the next three years. This plan outlines the company's current security measures and its desired future state, focusing on efficient use of funding without necessarily requiring the most resources. The strategic plan addresses the unique risks and complexities of the chosen company, incorporating updates to equipment, staff training, and other relevant topics. The project includes creating a company profile, an executive summary, a one-page overview, aligned with a relevant framework and including proposed policies and a timeline. The company's budget will be assigned based on its size and nature.",
+        url: "https://drive.google.com/drive/folders/1ewP5PFguhTzGbruT-8yN_eGaTBOiiBbh?usp=drive_link"
+    },
+    {
+        title: "Social Media Policy",
+        description: "The objective of this project is to act as a consultant for a fictional company to create and present a comprehensive social media policy. This policy will guide the company's social media use, covering essential aspects such as the policy's purpose, employee guidelines for personal and professional social media engagement, responsibilities for managing the company's social media accounts, crisis response protocols, security measures, and legal compliance.",
+        url: "https://drive.google.com/drive/folders/120VgINoamfnmbld84SqMHYXCOtIMgzS8?usp=drive_link"
+    }
 ]
