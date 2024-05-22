@@ -14,7 +14,7 @@ import { TracingBeam } from "./ui/tracing-beam";
 export default function ProjectList() {
   return (
     <>
-      <TracingBeam className="px-6 max-sm:hidden">
+      <TracingBeam className="px-6 hidden md:block">
         <div className="max-w-2xl mx-auto antialiased pt-4 relative">
           {projects.map((item) => (
             <div key={item.title} className="mb-10">
@@ -46,7 +46,7 @@ export default function ProjectList() {
         </div>
       </TracingBeam>
 
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative lg:hidden">
+      <div className="max-w-2xl mx-auto antialiased pt-4 relative md:hidden">
           {projects.map((item) => (
             <div key={item.title} className="mb-10">
               <Card>
