@@ -84,7 +84,7 @@ export const certifcates: Certifcation[] = [
         url: "https://www.credly.com/badges/135b3a03-f434-4dd3-b157-14e1481f0382/public_url"
     },
     {
-        name: "CompTIA Security +",
+        name: "CompTIA Security+",
         image:'https://images.credly.com/images/74790a75-8451-400a-8536-92d792c5184a/CompTIA_Security_2Bce.png',
         url: ""
     },
@@ -97,6 +97,31 @@ export const certifcates: Certifcation[] = [
         name: "Google-The Bits and Bytes of Computer Networking",
         image:'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~KYU9YKZRX3YH/CERTIFICATE_LANDING_PAGE~KYU9YKZRX3YH.jpeg',
         url: "https://coursera.org/verify/KYU9YKZRX3YH"
+    },
+    {
+        name: "Pre Security",
+        image:'https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-UYBNJFQNLD.png',
+        url: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-UYBNJFQNLD.png"
+    },
+    {
+        name: "Introduction to Cybersecurity",
+        image:'https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JC4M1XXJVA.png',
+        url: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JC4M1XXJVA.png"
+    },
+    {
+        name: "Design & Analysis of Secure Networked Systems",
+        image:'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~8QBE8GLATXHZ/CERTIFICATE_LANDING_PAGE~8QBE8GLATXHZ.jpeg',
+        url: "https://coursera.org/share/f5f07f2018aeec0e57f268cf2adb8a5b"
+    },
+    {
+        name: "Embedded Hardware & Operating Systems",
+        image:'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LTXRU2DDWDK4/CERTIFICATE_LANDING_PAGE~LTXRU2DDWDK4.jpeg',
+        url: "https://coursera.org/share/e0ac3f48377237871139903f9759c427"
+    },
+    {
+        name: "Classical Cryptosystems & Core Concepts",
+        image:'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~SZWNA4Z5ZP9H/CERTIFICATE_LANDING_PAGE~SZWNA4Z5ZP9H.jpeg',
+        url: "https://coursera.org/verify/SZWNA4Z5ZP9H"
     },
 ];
 
@@ -139,7 +164,7 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
     {
-        title: "Aldotech Auditing & Security Review",
+        title: "Auditing & Security Review",
         description: "The objective of this project is to create a comprehensive security analysis and improvement plan for a fictional  enterprise-sized company named AldoTech, which employs over 500 people and operates in multiple countries. The project involves detailing the business operations and IT infrastructure of the company, conducting a thorough  risk assessment to identify vulnerabilities and prioritize assets, and evaluating current security measures. Based on this assessment, the project uses COBIT's capability levels to set current and future security goals. It then applies NIST/CIS controls to address identified risks, providing metrics to measure the effectiveness of these controls and ensuring continuous improvement in the company's cybersecurity posture.",
         url: 'https://drive.google.com/drive/folders/1ZguFHPMaKNw9wjr0t6dQkCutjLnLTMIe?usp=drive_link'
     },
