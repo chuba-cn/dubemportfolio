@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import { SwordsIcon } from "lucide-react";
 import ProjectList from "./ProjectList";
 

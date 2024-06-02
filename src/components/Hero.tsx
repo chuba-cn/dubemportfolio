@@ -8,7 +8,7 @@ import profile from "../../public/dubemProfilePic.jpg";
 import { TextGenerateEffect } from './ui/text-generate-effect';
 
 const word1 = `Hey, I'm Chuba 👋`;
-const word2 = "I'm a cybersecurity analyst & computer engineering graduate.\nI'm certified in cybersecurity and Azure fundamentals. Let's secure your digital world."
+const word2 = "I'm a cybersecurity/IT professional with a background in Computer Enginneering and Cybersecurity Analytics. I'm passionate about cybersecurity and I aim to leverage my skills and knowledge to tackle new challenges in the IT industry."
 
 
 const Hero = () => {
@@ -21,9 +21,11 @@ const Hero = () => {
               <h1 className='text-5xl md:text-7xl font-bold tracking-tight mb-4 text-wrap text-gray-700'>
                 <span className='text-primary'>Cybersecurity&nbsp;</span>
                 <br className='md:hidden lg:inline'/>
-                Analyst
+                Analyst/IT Professional
               </h1>
-              <TextGenerateEffect words={word2} className='text-gray-700  text-xl md:text-2xl tracking-tighter mb-4 text-wrap' />
+              <div className='md:max-w-lg'>
+                <TextGenerateEffect words={word2} className='text-gray-700  text-xl md:text-2xl tracking-tighter mb-4 text-wrap' />
+              </div>
               <div className='flex items-center gap-4'>
                 <Link href="#contact">
                   <Button className='text-lg'>Get in Touch</Button>
