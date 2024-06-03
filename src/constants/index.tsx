@@ -83,7 +83,7 @@ export const certifcates: Certifcation[] = [
         url: "https://www.credly.com/badges/135b3a03-f434-4dd3-b157-14e1481f0382/public_url"
     },
     {
-        name: "CompTIA Security+",
+        name: "CompTIA Security+ (In View)",
         image:'https://images.credly.com/images/74790a75-8451-400a-8536-92d792c5184a/CompTIA_Security_2Bce.png',
         url: ""
     },
