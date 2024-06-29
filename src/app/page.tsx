@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import Wrapper from "@/components/Wrapper";
 import Hero from "@/components/Hero";
 import Experiences from "@/components/Experiences";
